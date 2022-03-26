@@ -1,0 +1,495 @@
+{
+	"info": {
+		"_postman_id": "96446b90-12a4-44a6-a4bd-050b2bbabae2",
+		"name": "ORDER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Status",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Status Code Validation:\r",
+							"pm.test(\"Status Code is 200\", function (){\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"//Multiple Status code verify \r",
+							"pm.test(\"Successfull Status Code\", function(){\r",
+							"  pm.expect(pm.response.code).to.be.oneOf([200,201])\r",
+							"});\r",
+							"//Data validation check\r",
+							"pm.test(\"Validate multiple fields in response\", function(){\r",
+							"    responseJson=pm.response.json();\r",
+							"    pm.expect (responseJson.status).to.eql(\"OK\");\r",
+							"});\r",
+							"//header check\r",
+							"pm.test(\"All Header is present\", function() {\r",
+							"  pm.response.to.have.header(\"content-Type\");\r",
+							"  pm.response.to.have.header(\"Content-Length\");\r",
+							"  pm.response.to.have.header(\"Connection\");\r",
+							"  pm.response.to.have.header(\"x-powered-by\");\r",
+							"  pm.response.to.have.header(\"etag\");\r",
+							"})\r",
+							"\r",
+							"pm.test(\"All header value check\", function () {\r",
+							"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.eql(\"application/json; charset=utf-8\");\r",
+							"    pm.expect(pm.response.headers.get(\"Content-Length\")).to.eql(\"15\");\r",
+							"    pm.expect(pm.response.headers.get(\"x-powered-by\")).to.eql(\"Express\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,201,202]);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/status/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"status",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book list",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"//Status Code Validation:\r",
+							"pm.test(\"Status Code is 200\", function (){\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"//Multiple Status code verify \r",
+							"pm.test(\"Successfull Status Code\", function(){\r",
+							"  pm.expect(pm.response.code).to.be.oneOf([200,201])\r",
+							"});\r",
+							"//header check\r",
+							"pm.test(\"All Header is present\", function() {\r",
+							"  pm.response.to.have.header(\"content-Type\");\r",
+							"  pm.response.to.have.header(\"Content-Length\");\r",
+							"  pm.response.to.have.header(\"Connection\");\r",
+							"  pm.response.to.have.header(\"x-powered-by\");\r",
+							"  pm.response.to.have.header(\"etag\");\r",
+							"})\r",
+							"\r",
+							"pm.test(\"All header value check\", function () {\r",
+							"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.eql(\"application/json; charset=utf-8\");\r",
+							"    pm.expect(pm.response.headers.get(\"Content-Length\")).to.eql(\"417\");\r",
+							"    pm.expect(pm.response.headers.get(\"x-powered-by\")).to.eql(\"Express\");\r",
+							"});\r",
+							"pm.test(\"Response time\", function(){\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(401);\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,201,202]);\r",
+							"});\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n\r\n\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/books",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "non-fiction",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Single Book",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response time\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/books/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"books",
+						"1"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Permission",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData=pm.response.json();\r",
+							"pm.environment.set(\"access\", jsonData.accessToken)\r",
+							"var jsonData=pm.response.json();\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							" let clientEmail=_.random(1000)+'@gmail.com'\r",
+							" pm.environment.set('email',clientEmail)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "accessToken={{access}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"clientName\": \"Valentin\",\r\n   \"clientEmail\": \"{{email}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api-clients",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api-clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData=pm.response.json();\r",
+							"pm.environment.set(\"Oid\",jsonData.orderId)\r",
+							"\r",
+							"pm.test(\"Status Code \", function (){\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"//Multiple Status code verify \r",
+							"\r",
+							"pm.test(\"Successfull Status Code\", function(){\r",
+							"  pm.expect(pm.response.code).to.be.oneOf([200,201])\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "accessToken={{access}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bookId\": 3,\r\n  \"customerName\": \"John\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/orders",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Books Orders",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"the endpoint returns the expected status code\",() => {\r",
+							"  const expectedStatusCode = 200;\r",
+							"  pm.response.to.have.status(expectedStatusCode);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "accessToken={{access}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}//orders/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"",
+						"orders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update an order",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "accessToken={{access}}",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Cookie2",
+						"value": "orderId={{Oid}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerName\": \"Teru Miya\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/orders/{{Oid}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"orders",
+						"{{Oid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get and Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/orders/{{Oid}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"orders",
+						"{{Oid}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/orders/{{Oid}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"orders",
+						"{{Oid}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

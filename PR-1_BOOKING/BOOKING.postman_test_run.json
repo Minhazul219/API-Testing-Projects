@@ -1,0 +1,1004 @@
+{
+	"id": "693128d5-ec45-4025-ad2c-e17116171ece",
+	"name": "BOOKING",
+	"timestamp": "2022-03-24T22:05:12.459Z",
+	"collection_id": "19778801-ccd04acb-1ef5-46b4-9ce6-27b7288b196b",
+	"folder_id": 0,
+	"environment_id": "19778801-1c3074e9-0850-4418-9216-34f093dc6d95",
+	"totalPass": 400,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "a074c7bb-9574-4744-986c-33167c04c3a5",
+			"name": "Create",
+			"time": 264,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Successful POST request": true,
+				"Validate multiple fields in response": true,
+				"Content-Type header value check": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 20,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 20,
+					"fail": 0
+				},
+				"Validate multiple fields in response": {
+					"pass": 20,
+					"fail": 0
+				},
+				"Content-Type header value check": {
+					"pass": 20,
+					"fail": 0
+				}
+			},
+			"times": [
+				266,
+				266,
+				289,
+				265,
+				266,
+				269,
+				270,
+				265,
+				263,
+				275,
+				265,
+				268,
+				263,
+				267,
+				268,
+				264,
+				265,
+				271,
+				278,
+				264
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Successful POST request": true,
+					"Validate multiple fields in response": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Successful POST request": true,
+					"Validate multiple fields in response": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Successful POST request": true,
+					"Validate multiple fields in response": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Successful POST request": true,
+					"Validate multiple fields in response": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Successful POST request": true,
+					"Validate multiple fields in response": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Successful POST request": true,
+					"Validate multiple fields in response": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Successful POST request": true,
+					"Validate multiple fields in response": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Successful POST request": true,
+					"Validate multiple fields in response": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Successful POST request": true,
+					"Validate multiple fields in response": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Successful POST request": true,
+					"Validate multiple fields in response": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Successful POST request": true,
+					"Validate multiple fields in response": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Successful POST request": true,
+					"Validate multiple fields in response": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Successful POST request": true,
+					"Validate multiple fields in response": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Successful POST request": true,
+					"Validate multiple fields in response": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Successful POST request": true,
+					"Validate multiple fields in response": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Successful POST request": true,
+					"Validate multiple fields in response": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Successful POST request": true,
+					"Validate multiple fields in response": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Successful POST request": true,
+					"Validate multiple fields in response": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Successful POST request": true,
+					"Validate multiple fields in response": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Successful POST request": true,
+					"Validate multiple fields in response": true,
+					"Content-Type header value check": true
+				}
+			]
+		},
+		{
+			"id": "3c19ad70-5b56-43fe-bb63-5f7884952abc",
+			"name": "GET Info",
+			"time": 264,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code is OK ": true,
+				"Validate multiple fields in response": true,
+				"Checkin,checkout": true,
+				"Successfull Status Code": true,
+				"Content-Type header is present": true,
+				"Content-Type header value check": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 20,
+					"fail": 0
+				},
+				"Status code is OK ": {
+					"pass": 20,
+					"fail": 0
+				},
+				"Validate multiple fields in response": {
+					"pass": 20,
+					"fail": 0
+				},
+				"Checkin,checkout": {
+					"pass": 20,
+					"fail": 0
+				},
+				"Successfull Status Code": {
+					"pass": 20,
+					"fail": 0
+				},
+				"Content-Type header is present": {
+					"pass": 20,
+					"fail": 0
+				},
+				"Content-Type header value check": {
+					"pass": 20,
+					"fail": 0
+				}
+			},
+			"times": [
+				273,
+				303,
+				264,
+				271,
+				272,
+				267,
+				265,
+				267,
+				278,
+				267,
+				268,
+				263,
+				262,
+				261,
+				259,
+				262,
+				258,
+				261,
+				260,
+				264
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code is OK ": true,
+					"Validate multiple fields in response": true,
+					"Checkin,checkout": true,
+					"Successfull Status Code": true,
+					"Content-Type header is present": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Status code is OK ": true,
+					"Validate multiple fields in response": true,
+					"Checkin,checkout": true,
+					"Successfull Status Code": true,
+					"Content-Type header is present": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Status code is OK ": true,
+					"Validate multiple fields in response": true,
+					"Checkin,checkout": true,
+					"Successfull Status Code": true,
+					"Content-Type header is present": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Status code is OK ": true,
+					"Validate multiple fields in response": true,
+					"Checkin,checkout": true,
+					"Successfull Status Code": true,
+					"Content-Type header is present": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Status code is OK ": true,
+					"Validate multiple fields in response": true,
+					"Checkin,checkout": true,
+					"Successfull Status Code": true,
+					"Content-Type header is present": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Status code is OK ": true,
+					"Validate multiple fields in response": true,
+					"Checkin,checkout": true,
+					"Successfull Status Code": true,
+					"Content-Type header is present": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Status code is OK ": true,
+					"Validate multiple fields in response": true,
+					"Checkin,checkout": true,
+					"Successfull Status Code": true,
+					"Content-Type header is present": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Status code is OK ": true,
+					"Validate multiple fields in response": true,
+					"Checkin,checkout": true,
+					"Successfull Status Code": true,
+					"Content-Type header is present": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Status code is OK ": true,
+					"Validate multiple fields in response": true,
+					"Checkin,checkout": true,
+					"Successfull Status Code": true,
+					"Content-Type header is present": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Status code is OK ": true,
+					"Validate multiple fields in response": true,
+					"Checkin,checkout": true,
+					"Successfull Status Code": true,
+					"Content-Type header is present": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Status code is OK ": true,
+					"Validate multiple fields in response": true,
+					"Checkin,checkout": true,
+					"Successfull Status Code": true,
+					"Content-Type header is present": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Status code is OK ": true,
+					"Validate multiple fields in response": true,
+					"Checkin,checkout": true,
+					"Successfull Status Code": true,
+					"Content-Type header is present": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Status code is OK ": true,
+					"Validate multiple fields in response": true,
+					"Checkin,checkout": true,
+					"Successfull Status Code": true,
+					"Content-Type header is present": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Status code is OK ": true,
+					"Validate multiple fields in response": true,
+					"Checkin,checkout": true,
+					"Successfull Status Code": true,
+					"Content-Type header is present": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Status code is OK ": true,
+					"Validate multiple fields in response": true,
+					"Checkin,checkout": true,
+					"Successfull Status Code": true,
+					"Content-Type header is present": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Status code is OK ": true,
+					"Validate multiple fields in response": true,
+					"Checkin,checkout": true,
+					"Successfull Status Code": true,
+					"Content-Type header is present": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Status code is OK ": true,
+					"Validate multiple fields in response": true,
+					"Checkin,checkout": true,
+					"Successfull Status Code": true,
+					"Content-Type header is present": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Status code is OK ": true,
+					"Validate multiple fields in response": true,
+					"Checkin,checkout": true,
+					"Successfull Status Code": true,
+					"Content-Type header is present": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Status code is OK ": true,
+					"Validate multiple fields in response": true,
+					"Checkin,checkout": true,
+					"Successfull Status Code": true,
+					"Content-Type header is present": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"Status code is OK ": true,
+					"Validate multiple fields in response": true,
+					"Checkin,checkout": true,
+					"Successfull Status Code": true,
+					"Content-Type header is present": true,
+					"Content-Type header value check": true
+				}
+			]
+		},
+		{
+			"id": "8fea0bd3-7ab4-469c-b9d2-18c3ad5dd411",
+			"name": "Permission",
+			"time": 261,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 20,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 20,
+					"fail": 0
+				}
+			},
+			"times": [
+				263,
+				262,
+				265,
+				271,
+				261,
+				270,
+				260,
+				266,
+				262,
+				264,
+				264,
+				258,
+				262,
+				262,
+				265,
+				268,
+				261,
+				267,
+				260,
+				261
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				},
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				},
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				},
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				},
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				},
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				},
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				},
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				},
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				},
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				},
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				},
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				},
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				},
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				},
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				},
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				},
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				},
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				},
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				},
+				{
+					"Response time is less than 200ms": true,
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "b8976ba6-b173-42fb-a6e2-d010080b1c09",
+			"name": "Update",
+			"time": 266,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"firstname check": true,
+				"lastname check": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 20,
+					"fail": 0
+				},
+				"firstname check": {
+					"pass": 20,
+					"fail": 0
+				},
+				"lastname check": {
+					"pass": 20,
+					"fail": 0
+				}
+			},
+			"times": [
+				282,
+				269,
+				267,
+				265,
+				267,
+				278,
+				313,
+				268,
+				274,
+				267,
+				263,
+				273,
+				285,
+				265,
+				266,
+				264,
+				846,
+				262,
+				268,
+				266
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"firstname check": true,
+					"lastname check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname check": true,
+					"lastname check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname check": true,
+					"lastname check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname check": true,
+					"lastname check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname check": true,
+					"lastname check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname check": true,
+					"lastname check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname check": true,
+					"lastname check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname check": true,
+					"lastname check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname check": true,
+					"lastname check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname check": true,
+					"lastname check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname check": true,
+					"lastname check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname check": true,
+					"lastname check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname check": true,
+					"lastname check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname check": true,
+					"lastname check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname check": true,
+					"lastname check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname check": true,
+					"lastname check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname check": true,
+					"lastname check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname check": true,
+					"lastname check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname check": true,
+					"lastname check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname check": true,
+					"lastname check": true
+				}
+			]
+		},
+		{
+			"id": "1dc8ad1f-ada7-416d-b8e4-4a15bd03cf10",
+			"name": "Patch",
+			"time": 265,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"firstname": true,
+				"Content-Type header value check": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 20,
+					"fail": 0
+				},
+				"firstname": {
+					"pass": 20,
+					"fail": 0
+				},
+				"Content-Type header value check": {
+					"pass": 20,
+					"fail": 0
+				}
+			},
+			"times": [
+				265,
+				277,
+				274,
+				264,
+				266,
+				273,
+				266,
+				268,
+				266,
+				265,
+				263,
+				278,
+				276,
+				264,
+				263,
+				265,
+				265,
+				270,
+				263,
+				265
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"firstname": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname": true,
+					"Content-Type header value check": true
+				},
+				{
+					"Status code is 200": true,
+					"firstname": true,
+					"Content-Type header value check": true
+				}
+			]
+		},
+		{
+			"id": "b75a767a-6297-416b-84f5-63c3569fa48e",
+			"name": "Delete",
+			"time": 262,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 20,
+					"fail": 0
+				}
+			},
+			"times": [
+				270,
+				266,
+				265,
+				264,
+				264,
+				266,
+				263,
+				263,
+				287,
+				270,
+				272,
+				269,
+				262,
+				269,
+				269,
+				266,
+				262,
+				263,
+				272,
+				262
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				},
+				{
+					"Status code is 201": true
+				}
+			]
+		}
+	],
+	"count": 20,
+	"totalTime": 32692,
+	"collection": {
+		"requests": [
+			{
+				"id": "a074c7bb-9574-4744-986c-33167c04c3a5",
+				"method": "POST"
+			},
+			{
+				"id": "3c19ad70-5b56-43fe-bb63-5f7884952abc",
+				"method": "GET"
+			},
+			{
+				"id": "8fea0bd3-7ab4-469c-b9d2-18c3ad5dd411",
+				"method": "POST"
+			},
+			{
+				"id": "b8976ba6-b173-42fb-a6e2-d010080b1c09",
+				"method": "PUT"
+			},
+			{
+				"id": "1dc8ad1f-ada7-416d-b8e4-4a15bd03cf10",
+				"method": "PATCH"
+			},
+			{
+				"id": "b75a767a-6297-416b-84f5-63c3569fa48e",
+				"method": "DELETE"
+			}
+		]
+	}
+}
